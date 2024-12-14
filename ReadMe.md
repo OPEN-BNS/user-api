@@ -16,9 +16,9 @@ User Directory API
 
   - Pre requisites : Start MySQL server on port localhost:3306, and create a database name : user_dir_app
 
-  docker create network user-dir-network
+  docker create network <NETWORK_NAME>
 
-  docker run -d -p 9090:9090 --name user-dir-api --network user-dir-network --restart always --log-opt mode=non-blocking --log-opt max-size=10M --log-opt max-file=10 -e ENCRYPTION_KEY=<PASSWORD_ENCRYPTION_KEY> -e MYSQL_PASSWORD=<MYSQL_PASSWORD> <IMAGE_NAME>
+  docker run -d -p 9090:9090 --name user-dir-api --network <NETWORK_NAME> --restart always --log-opt mode=non-blocking --log-opt max-size=10M --log-opt max-file=10 -e ENCRYPTION_KEY=<PASSWORD_ENCRYPTION_KEY> -e MYSQL_PASSWORD=<MYSQL_PASSWORD> <IMAGE_NAME>
 
 This project is made using FastAPI.
 For detail documentation, please vist : http://<SERVER_PATH>/docs
