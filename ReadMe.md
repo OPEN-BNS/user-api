@@ -14,7 +14,7 @@ User Directory API
 
 - Run using docker
 
-  - Pre requisites : Start MySQL server on port localhost:3306, and create a database name : user_dir_app
+  - Pre requisites : Start MySQL server on localhost:3306, and create a database name : user_dir_app
 
   docker create network <NETWORK_NAME>
 
