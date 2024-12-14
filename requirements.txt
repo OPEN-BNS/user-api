@@ -1,0 +1,9 @@
+uvicorn
+fastapi
+sqlalchemy
+pydantic
+typing
+pycryptodome
+pymysql
+cryptography
+prometheus_fastapi_instrumentator
